@@ -8,20 +8,25 @@ Spree Sort Products extends the ability of a taxon on its products to be sorted 
   * Get the latest greatest from github: 
     
       ```ruby
+        gem 'jquery-dragsort-rails', '~> 1.0.0'
         gem 'spree_sort_products' , :git => 'git://github.com/suryart/spree_sort_products.git'
       ```
 
   * Get the 1-3-stable branch for Spree 1.3.x from github: 
     
       ```ruby
+        gem 'jquery-dragsort-rails', '~> 1.0.0'
         gem 'spree_sort_products' , :git => 'git://github.com/suryart/spree_sort_products.git', :branch => '1-3-stable'
       ```
 
   * Or get it from rubygems.org by mentioning the following line in your Gemfile:
     
       ```ruby 
+        gem 'jquery-dragsort-rails', '~> 1.0.0'
         gem 'spree_sort_products', '1.3.2'
       ```
+
+Please note that this extension uses [jquery-dragsort-rails](https://github.com/suryart/jquery-dragsort-rails) to achieve 3D sorting.
 
 ## Caution
 
