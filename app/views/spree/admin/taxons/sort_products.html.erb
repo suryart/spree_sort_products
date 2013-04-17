@@ -1,0 +1,37 @@
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+
+<% content_for :page_title do %>
+  <%= t(:sort_taxon_products) %> "<%= @taxon.name %>"
+<% end %>
+
+<%= t(:sort_products_hint_message) %>
+
+<div id="ajax_error" class="errorExplanation" style="display:none;"></div>
+<% content_for :page_actions do %>
+  <%= form_for [:update_products, :admin, @taxonomy, @taxon], :method => :post do |f| %>
+    <%= hidden_field_tag :taxon_id, @taxon_id %>
+    <%= hidden_field_tag :product_positions, 0 %>
+
+      <li id="save_order">
+        <%= button_link_to t(:back_to_taxonomies_list), spree.admin_taxonomies_path, :icon => 'icon-arrow-left' %>
+      </li>
+  <% end %>
+<% end %>
+
+<ul id="products" class="thumbnails">
+  <% @products.each do |product| %>
+    <%= content_tag_for :li, product, :class=> "three columns", :style => 'list-style-type: none' do %>
+      <div class="two columns thumbnail" style = "cursor: pointer;" value="<%= product.id %>">
+          <%= product_image(product, :width => "145", :height => "190", :id=>"image-map") %>
+          <div class="caption">
+            <% product_name = product.name.split(" ") %>
+            <% product_name.delete(product_name.last) %>
+            <h5><%= product_name.join(" ") %></h5>
+            <p><%= truncate(product.description, :length => 45, :separator => ' ') %></p>
+          </div>
+      </div>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= javascript_include_tag 'admin/sort_products' %>

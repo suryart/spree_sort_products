@@ -1,0 +1,9 @@
+# You can add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  save_sorted_order: "Save the sorted position"
+  sort_products: "Sort products"
+  sort_products_hint_message: "Drag and Drop products to sort their position and then click on Save button to save their position."
+  sort_products_taxons_update_message: "Products have been re-positioned successfully!"
+  sort_taxon_products: "Sort products in taxon:"
