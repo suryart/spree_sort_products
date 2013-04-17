@@ -31,7 +31,6 @@ Just make sure that you have **admin/taxonomy_overrides** and **admin/sort_produ
         Rails.application.config.assets.precompile += %w(admin/taxonomy_overrides admin/sort_products)
       ```
 
-
 ### Then run the following commands: 
 
     $ bundle install
