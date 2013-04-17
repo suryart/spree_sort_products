@@ -27,9 +27,9 @@ Spree Sort Products extends the ability of a taxon on its products to be sorted 
 
 Just make sure that you have **admin/taxonomy_overrides** and **admin/sort_products** files precompiled. If it's not happening by default then please add/edit this in your **config/environments/production.rb** file:
 
-    ```ruby
-      Rails.application.config.assets.precompile += %w(admin/taxonomy_overrides admin/sort_products)
-    ```
+      ```ruby
+        Rails.application.config.assets.precompile += %w(admin/taxonomy_overrides admin/sort_products)
+      ```
 
 
 ### Then run the following commands: 
