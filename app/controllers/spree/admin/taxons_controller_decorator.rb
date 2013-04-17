@@ -1,6 +1,6 @@
 module Spree
   module Admin
-    TaxonsController.class_eval do
+    class TaxonsController < Spree::Admin::BaseController
       before_filter :load_taxon, :only => [:sort_products, :update_products]
 
       def sort_products

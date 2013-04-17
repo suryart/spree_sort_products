@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_sort_products'
-  s.version     = '1.3.2'
+  s.version     = '1.3.3'
   s.summary     = 'Spree Sort Products gives you ability to sort products with in a taxon for spree.'
   s.description = 'Spree Sort Products extends the ability of a taxon on its products to be sorted from the web interface using the drag and drop behavior.'
   s.required_ruby_version = '>= 1.9.2'
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 1.3.0'
+  s.add_dependency 'jquery-dragsort-rails', '~> 1.0.0'
 
   s.add_development_dependency 'capybara', '~> 2.0.2'
   s.add_development_dependency 'coffee-rails'
