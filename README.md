@@ -26,6 +26,14 @@ Spree Sort Products extends the ability of a taxon on its products to be sorted 
         gem 'spree_sort_products', '1.3.2'
       ```
 
+### Then run the following commands: 
+
+    $ bundle install
+    $ rails g spree_sort_products:install 
+    $ rake db:migrate
+    $ rails s 
+    
+
 Please note that this extension uses [jquery-dragsort-rails](https://github.com/suryart/jquery-dragsort-rails) to achieve 3D sorting.
 
 ## Caution
@@ -38,12 +46,11 @@ Just make sure that you have **admin/taxonomy_overrides** and **admin/sort_produ
 
 * Write test cases.
 
-### Then run the following commands: 
+## LINKS
 
-    $ bundle install
-    $ rails g spree_sort_products:install 
-    $ rake db:migrate
-    $ rails s 
+* Dependency status: [![Dependency Status](https://gemnasium.com/suryart/spree_sort_products.png)](https://gemnasium.com/suryart/spree_sort_products)
+* Code climate: [![Code Climate](https://codeclimate.com/github/suryart/spree_sort_products.png)](https://codeclimate.com/github/suryart/spree_sort_products)
+* Issues: [Project issues](https://github.com/suryart/spree_active_sale/issues)
 
 ## Testing
 
