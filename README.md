@@ -2,6 +2,8 @@
 
 Spree Sort Products extends the ability of a taxon on its products to be sorted from the web interface using the drag and drop behavior.
 
+Here is a quick walk through of sorting products using this extension: [Click here to see the steps](https://github.com/suryart/spree_sort_products/wiki/sort-products)
+
 ## Installation
 
 ### Inside your rails application with Spree installed include the following line in your Gemfile:
