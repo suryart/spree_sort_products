@@ -16,14 +16,14 @@ Spree Sort Products extends the ability of a taxon on its products to be sorted 
     
       ```ruby
         gem 'jquery-dragsort-rails', '~> 1.0.0'
-        gem 'spree_sort_products' , :git => 'git://github.com/suryart/spree_sort_products.git', :branch => '1-3-stable'
+        gem 'spree_sort_products' , :git => 'git://github.com/suryart/spree_sort_products.git', :branch => '2-0-stable'
       ```
 
   * Or get it from rubygems.org by mentioning the following line in your Gemfile:
     
       ```ruby 
         gem 'jquery-dragsort-rails', '~> 1.0.0'
-        gem 'spree_sort_products', '1.3.2'
+        gem 'spree_sort_products', '2.0.0'
       ```
 
 ### Then run the following commands: 
@@ -38,9 +38,9 @@ Please note that this extension uses [jquery-dragsort-rails](https://github.com/
 
 ## Caution
 
-Just make sure that you have **admin/taxonomy_overrides** and **admin/sort_products** files precompiled. If it's not happening by default then please add/edit this in your **config/environments/production.rb** file:
+Just make sure that you have **admin/taxon_tree_menu_overrides** and **admin/sort_products** files precompiled. If it's not happening by default then please add/edit this in your **config/environments/production.rb** file:
 
-        Rails.application.config.assets.precompile += %w(admin/taxonomy_overrides admin/sort_products)
+        Rails.application.config.assets.precompile += %w(admin/taxon_tree_menu_overrides admin/sort_products)
 
 ## TODOs
 
@@ -50,15 +50,24 @@ Just make sure that you have **admin/taxonomy_overrides** and **admin/sort_produ
 
 * Dependency status: [![Dependency Status](https://gemnasium.com/suryart/spree_sort_products.png)](https://gemnasium.com/suryart/spree_sort_products)
 * Code climate: [![Code Climate](https://codeclimate.com/github/suryart/spree_sort_products.png)](https://codeclimate.com/github/suryart/spree_sort_products)
-* Issues: [Project issues](https://github.com/suryart/spree_active_sale/issues)
+* Issues: [Project issues](https://github.com/suryart/spree_sort_products/issues)
 
 ## Testing
 
 Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
 
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
+```shell
+bundle
+bundle exec rake test_app
+bundle exec rspec spec
+```
+
+When testing your applications integration with this extension you may use it's factories.
+Simply add this require statement to your spec_helper:
+
+```ruby
+require 'spree_sort_products/factories'
+```
 
 ## Contributing
 

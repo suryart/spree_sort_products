@@ -8,7 +8,9 @@
 
 <div id="ajax_error" class="errorExplanation" style="display:none;"></div>
 <% content_for :page_actions do %>
-  <%= form_for [:update_products, :admin, @taxonomy, @taxon], :method => :post do |f| %>
+  <% # Because otherwise the form would attempt to use to_param of @taxon %>
+  <% form_url = update_products_admin_taxonomy_taxon_path(@taxonomy.id, @taxon.id) %>
+  <%= form_for [:update_products, :admin, @taxonomy, @taxon], :method => :post, :url => form_url do |f| %>
     <%= hidden_field_tag :taxon_id, @taxon_id %>
     <%= hidden_field_tag :product_positions, 0 %>
 
