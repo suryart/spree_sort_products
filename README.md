@@ -23,7 +23,7 @@ Spree Sort Products extends the ability of a taxon on its products to be sorted 
     
       ```ruby 
         gem 'jquery-dragsort-rails', '~> 1.0.0'
-        gem 'spree_sort_products', '1.3.3'
+        gem 'spree_sort_products', '1.3.4'
       ```
 
 ### Then run the following commands: 

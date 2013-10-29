@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_sort_products'
-  s.version     = '1.3.3'
+  s.version     = '1.3.4'
   s.summary     = 'Spree Sort Products gives you ability to sort products with in a taxon for spree.'
   s.description = 'Spree Sort Products extends the ability of a taxon on its products to be sorted from the web interface using the drag and drop behavior.'
   s.required_ruby_version = '>= 1.9.2'

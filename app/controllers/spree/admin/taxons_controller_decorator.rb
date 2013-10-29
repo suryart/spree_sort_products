@@ -14,7 +14,7 @@ module Spree
           product = products.detect{|p| p.product_id == id }
           product.update_attributes(:position => index) unless product.nil?
         end
-        redirect_to sort_products_taxons_path(@taxonomy, @taxon), :notice => t(:sort_products_taxons_update_message)
+        redirect_to sort_products_taxons_path(@taxonomy, @taxon.id), :notice => t(:sort_products_taxons_update_message)
       end
 
       def load_taxon
