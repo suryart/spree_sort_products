@@ -12,7 +12,7 @@ Spree Sort Products extends the ability of a taxon on its products to be sorted 
         gem 'spree_sort_products' , :git => 'git://github.com/suryart/spree_sort_products.git'
       ```
 
-  * Get the 1-3-stable branch for Spree 1.3.x from github: 
+  * Get the 2-0-stable branch for Spree 2.0.x from github: 
     
       ```ruby
         gem 'jquery-dragsort-rails', '~> 1.0.0'
